@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GIS-3F-9ou" customClass="CustomSliderView">
+            <rect key="frame" x="0.0" y="0.0" width="297" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZvA-20-DxK">
+                    <rect key="frame" x="0.0" y="0.0" width="297" height="48"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7l-28-vrg">
+                            <rect key="frame" x="0.0" y="0.0" width="24" height="48"/>
+                            <color key="backgroundColor" red="0.23529411759999999" green="0.72156862749999995" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ax-OX-Lcl">
+                            <rect key="frame" x="127" y="13" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon_circle" translatesAutoresizingMaskIntoConstraints="NO" id="WoU-bh-TBH">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                            <gestureRecognizers/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.84057969669999999" blue="0.31633808590000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="0ax-OX-Lcl" firstAttribute="centerY" secondItem="ZvA-20-DxK" secondAttribute="centerY" id="3qa-GE-tVW"/>
+                        <constraint firstAttribute="bottom" secondItem="B7l-28-vrg" secondAttribute="bottom" id="65r-c9-3gE"/>
+                        <constraint firstItem="WoU-bh-TBH" firstAttribute="leading" secondItem="ZvA-20-DxK" secondAttribute="leading" id="D3W-cm-R41"/>
+                        <constraint firstItem="B7l-28-vrg" firstAttribute="top" secondItem="ZvA-20-DxK" secondAttribute="top" id="DB9-BU-NBL"/>
+                        <constraint firstItem="WoU-bh-TBH" firstAttribute="leading" secondItem="B7l-28-vrg" secondAttribute="trailing" constant="-24" id="O70-9J-IsX"/>
+                        <constraint firstAttribute="bottom" secondItem="WoU-bh-TBH" secondAttribute="bottom" id="OTB-He-UMf"/>
+                        <constraint firstItem="0ax-OX-Lcl" firstAttribute="centerX" secondItem="ZvA-20-DxK" secondAttribute="centerX" id="Pwh-WY-KhG"/>
+                        <constraint firstItem="B7l-28-vrg" firstAttribute="leading" secondItem="ZvA-20-DxK" secondAttribute="leading" id="Q9M-m1-QDj"/>
+                        <constraint firstItem="WoU-bh-TBH" firstAttribute="top" secondItem="ZvA-20-DxK" secondAttribute="top" id="kaA-yg-HUJ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZvA-20-DxK" firstAttribute="top" secondItem="GIS-3F-9ou" secondAttribute="top" id="DhI-9n-Suw"/>
+                <constraint firstAttribute="trailing" secondItem="ZvA-20-DxK" secondAttribute="trailing" id="JTq-W2-9xm"/>
+                <constraint firstAttribute="bottom" secondItem="ZvA-20-DxK" secondAttribute="bottom" id="JWt-OV-G1B"/>
+                <constraint firstItem="ZvA-20-DxK" firstAttribute="leading" secondItem="GIS-3F-9ou" secondAttribute="leading" id="x4u-yS-X00"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sliderImage" destination="WoU-bh-TBH" id="GDQ-gG-tOy"/>
+                <outlet property="sliderImageXConstraint" destination="D3W-cm-R41" id="G48-FK-76M"/>
+                <outlet property="sliderTitle" destination="0ax-OX-Lcl" id="Atp-sF-Dvi"/>
+            </connections>
+            <point key="canvasLocation" x="-47.5" y="-242"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_circle" width="48" height="48"/>
+    </resources>
+</document>
